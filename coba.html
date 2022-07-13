@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Responsive</title>
+    <link rel="stylesheet" href="css/tampilan.css">
+   <style>{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+body
+{
+    background-color: gainsboro;
+}
+ 
+.badan-utama
+{
+    max-width: 1080px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 15px;
+    overflow: hidden;
+}
+ 
+header
+{
+    background-color: crimson;
+    color: white;
+    padding: 20px;
+}
+ 
+header h2
+{
+    margin-bottom: 7px;
+    font-size: 35px;
+}
+ 
+.navigasi ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:darkorange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+ 
+.navigasi li 
+{
+    float: left;
+}
+ 
+.navigasi li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ 
+.navigasi li a:hover 
+{
+    background-color:red;
+    transition-duration: 2s;
+}
+ 
+.banner
+{
+    margin-bottom: 15px;
+}
+ 
+.banner img
+{
+    display: block;
+    width: 100%;
+    height: 330px;
+}
+ 
+.kotak
+{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+ 
+.kotak h3
+{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 13px;
+}
+ 
+.kotak img
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+ 
+.kotak p
+{
+    margin-bottom: 10px;
+}
+ 
+.menu-kiri
+{
+    width: 250px;
+    margin-right: 10px;
+    float: left;
+}
+ 
+.menu-tengah
+{
+    width: 530px;
+    margin-right: 10px;
+    float: left;
+}
+ 
+.menu-tengah h3
+{
+    background: none;
+    color: crimson;
+    margin-bottom: 0;
+}
+ 
+.tanggal-posting
+{
+    color: gray;
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+}
+ 
+.tombol
+{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    width: 120px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+ 
+.tombol:hover
+{
+    background-color: black;
+    transition-duration: 2s;
+}
+ 
+.tombol-pesan
+{
+    background-color: green;
+}
+ 
+.tombol-lengkap
+{
+    background-color: darkorange;
+}
+ 
+.menu-kanan
+{
+    width: 250px;
+    float: left;
+}
+ 
+.menu-kanan, .menu-kiri, .menu-tengah
+{
+    margin-bottom: 15px;
+}
+ 
+footer
+{
+    clear: both;
+    background-color: crimson;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+ 
+.menu-artikel ul
+{
+    list-style-type: none;
+}
+ 
+.menu-artikel ul li a
+{
+    text-decoration: none;
+    display: block;
+    padding: 13px;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 12px;
+    color: black;
+}
+ 
+.menu-artikel ul li a:hover
+{
+    color: darkorange;
+    border-bottom: 5px double chocolate;
+    transition-duration: 2s;
+}
+ 
+ 
+/*untuk tablet*/
+@media screen and (max-width:1080px)
+{
+    .badan-utama
+    {
+        width: 100%;
+    }
+ 
+    .menu-kiri
+    {
+        width: 25%;
+    }
+ 
+    .menu-tengah
+    {
+        width: 68%;
+        float: right;
+    }
+ 
+    .menu-kanan
+    {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
+}
+ 
+/*untuk android*/
+@media screen and (max-width:780px)
+{
+    header h2, header p
+    {
+        text-align: center;
+    }
+ 
+    .menu-kiri, .menu-kanan, .menu-tengah
+    {
+        float: none;
+        width: 100%;
+    }
+ 
+    .navigasi li
+    {
+        float: none;
+    }
+}</style>
+</head>
+<body>
+     
+    <div class="badan-utama">
+        
+        <header>
+            <h2>WartOl</h2>
+            <p>Warteg Online untuk kita semua</p>
+        </header>
+ 
+        <nav class="navigasi">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#berita">Menu</a></li>
+                <li><a href="#kontak">About</a></li>
+                <li><a href="#tentang">Store</a></li>
+            </ul>
+        </nav>
+ 
+        <div class="banner">
+            <img src="gambar/ayam.jpg" alt="Ayam Goreng Sambal">
+        </div>
+ 
+        <div class="menu-kiri">
+            <div class="kotak">
+                <h3>Pemesanan</h3>
+                <p>
+                    Isi Form Pemesanan dengan Klik Tombol di bawah ini
+                </p>
+ 
+                <a class="tombol tombol-pesan" href="#">Pesan</a>
+            </div>
+        </div>
+ 
+        <div class="menu-tengah">
+            <div class="kotak">
+                <h3>Sate Kambing Wartol</h3>
+                <span class="tanggal-posting">
+                    Diposting pada 11.04 WIB, 29 April 2019
+                </span>
+ 
+                <img src="gambar/Sate.jpg" alt="Sate Ayam">
+ 
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum corrupti accusamus officia blanditiis ipsam deleniti maxime. Soluta error asperiores quas distinctio quidem minus, dicta, doloribus eius, eos inventore qui ullam.
+                </p>
+ 
+                <a class="tombol tombol-lengkap" href="#">Selengkapnya</a>
+            </div>
+        </div>
+ 
+        <div class="menu-kanan">
+            <div class="kotak">
+                <h3>Jadwal Buka</h3>
+                <img src="gambar/Sate.jpg" alt="Sate Ayam">
+ 
+                <h4 align="center">Jadwal Buka</h4>
+                <center>
+                    <p>Senin-Minggu 08.00 WIB - 22.00 WIB</p>
+                </center>
+            </div>
+ 
+ 
+            <div class="kotak">
+                <h3>Berita Terbaru</h3>
+ 
+                <nav class="menu-artikel">
+                    <ul>
+                        <li><a href="#">Khasiat Daging Kambing</a></li>
+                        <li><a href="#">Menu Makanan Keluarga</a></li>
+                        <li><a href="#">Sejarah pembuatan sambal</a></li>
+                        <li><a href="#">Minuman pelepas dahaga</a></li>
+                        <li><a href="#">Ayam Geprek Gurih</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+ 
+        <footer>
+            @copyright 2019 || by Danny
+        </footer>
+ 
+    </div>
+ 
+</body>
+</html>

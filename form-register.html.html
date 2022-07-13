@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrasi</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <STYle>
+            {
+                margin: 0;
+                padding: 0;
+                outline: 0;
+                font-family: 'Open Sans', sans-serif;
+            
+            }
+
+            body{
+                font-family: sans-serif;
+                height: 100vh;
+                background-image: url(https://images6.alphacoders.com/107/1070555.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            legend{
+                text-align:left;
+                font-size: 20px;
+                color:rgb(3, 0, 3);
+                border: rgb(10, 7, 2);
+                background-color: rgb(222, 212, 236);
+            }
+            form{
+                border: solid ;
+                background-color: rgba(118, 23, 173, 0.712);
+            }
+           input{
+                color: rgb(53, 56, 252);
+                background-color: rgb(214, 214, 214);
+           }
+            h1 {
+                font-size: 10px;
+                background-color: rgba(217, 176, 255, 0.568);
+            }
+    </STYle>
+<body>
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Registrasi</legend>
+        <p>
+            <label>Nama:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap..." />
+        </p>
+        <p>
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Username..." />
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Your email..." />
+        </p>
+        <p>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Passowrd..." />
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+        </p>
+        <p>
+            <label>Biografi:</label>
+            <textarea name="biografi"></textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Daftar" />
+        </p>
+        <h1><center>Margo Budi Santoso</center></h1>
+        </fieldset>
+    </form>
+</body>
+</html>

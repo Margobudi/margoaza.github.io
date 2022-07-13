@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout Dengan Elemen Semanti</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        margin: 0;
+        padding: 1px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        
+        .badan-utama
+        {
+            max-width: 1080px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 15px;
+            overflow: hidden;
+        }
+        
+        header
+        {
+            background-color: rgb(81, 8, 110);
+            color: white;
+            padding: 20px;
+        }
+        footer
+        {
+            clear: both;
+            background-color: rgb(158, 60, 204);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+                .navigasi ul 
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:rgb(175, 2, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .navigasi li 
+        {
+            float: left;
+            color: black;
+        }
+        
+        .navigasi li a 
+        {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        
+        .navigasi li a:hover 
+        {
+            background-color:rgb(93, 14, 117);
+            transition-duration: 2s;
+        }
+        body{
+            font-family: sans-serif;
+                        height: 100vh;
+                        background-image: url(https://images6.alphacoders.com/107/1070555.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+        }
+        article{
+            background-color: rgb(189, 159, 230);
+            padding: 10%;
+            width: 90% auto;
+            height: 100px;
+            padding-top: 5px;
+            padding-left: 3%;
+                    
+        }
+
+    </style>
+
+</head>
+    <body>
+        <div class="badan-utama"></div>
+            <header>
+                <h1>
+                    Belajar Elemen Semantik di HTML
+                </h1>
+            </header>
+                <nav class="navigasi">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <h1>Tutorial Semantik Untuk Pemula</h1>
+                    <p>Elemen Semantik adalah elemen yang memiliki makna dan tujuan.
+                        Tujuannya agar kode HTML mudah di baca dan tidak ada penyalahgunaan tag.
+                        Elemen Semantik bagus untuk SEO dan juga dapat meningkatkan accessebility.
+                    </p>
+                
+                </article>
+            <footer>Copyright & copy; 2022 by MArgo Budi Santoso</footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+    <title>PRKT_JS</title>
+    <style>
+        body {
+            padding-top: 0%;
+            padding-bottom: 3%;
+        }
+
+        font {
+            padding-left: 32%;
+            font-size: 50px;
+        }
+
+        .container * {
+            font-size: 40px;
+        }
+
+        div {
+            font-size: 50PX;
+            padding-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <font color="opera ">PRAKTEK JS MARGO
+            </font>
+        </div>
+    </nav>
+    <div class="conten">
+        <p class="pragraf">praktek js 1</p>
+        <p class="pragraf">praktek js 2</p>
+        <p class="pragraf">praktek js 3</p>
+    </div>
+    <footer class="py-3 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright @ Margo Budi Santoso 2022</p>
+        </div>
+    </footer>
+    <script>
+        var pragraf = document.getElementsByClassName("pragraf")
+        setInterval(function () {
+            pragraf[0].style.color = "red";
+            pragraf[1].style.color = "green";
+            pragraf[2].style.color = "blue";
+            setTimeout(function () {
+                pragraf[0].style.color = "black";
+                pragraf[1].style.color = "black";
+                pragraf[2].style.color = "black";
+            }, 600)
+        }, 1000)
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
